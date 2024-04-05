@@ -1,0 +1,37 @@
+{% extends 'base.html' %} <!--adds onto the base.html in the block content section-->
+{% block content %} <!--Stuff that goes into the webpage on main page-->	
+
+<form method="POST">
+	<table> <!--creates table so all input boxes align together-->
+		<div class = "inputs"> <!--input data-->	
+		<tr>
+		<td align="left"><label for="Data1">Amplitude (m) </label> </td>
+	  <td align="right"><input type="text" name="Data1"
+				placeholder="Data1"
+	      value="{{ request.form['Data1'] }}"></input></td></tr><!--data 1-->	
+		<tr>	
+		<td align="left"><label for="Data2">Wave Period (s) </label> </td>
+	  <td align="right"><input type="text" name="Data2"
+				placeholder="Data2"
+	      value="{{ request.form['Data2'] }}"></input></td></tr><!--data 2-->	
+		<tr>
+		<td align="left"><label for="Data3">Water Depth (m) </label> </td>
+	  <td align="right"><input type="text" name="Data3"
+				placeholder="Data3"
+	      value="{{ request.form['Data3'] }}"></input></td></tr><!--data 3-->	
+		<tr>
+		<td align="left"><label for="Data4">Cylinder Diameter (m) </label> </td>
+		<td align="right"><input type="text" name="Data4"
+				placeholder="Data4"
+	      value="{{ request.form['Data4'] }}"></input></td></tr><!--data 4-->	
+		</div>
+		<tr>
+		<td align="right"><button type="submit">Submit</button> </td></tr>
+	</table> <!--button to submit data to python file-->	
+</form>
+
+{% for message in get_flashed_messages() %} 
+  <div class="alert">{{ message }}</div> <!--shows flashed message-->
+{% endfor %}
+
+{% endblock %}

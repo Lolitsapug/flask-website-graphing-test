@@ -1,0 +1,28 @@
+{% extends 'base.html' %} <!--adds onto the base.html in the block content section-->
+{% block content %}
+	<style>
+		.image {
+			margin: 2%;
+      position: relative;
+    }
+		.imageCaption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+			font-size: 14px;
+			opacity: 0.7;
+			color: #ffffff;
+    }
+	</style>
+
+	<h3>Main Page</h3>
+	<p>Wave loads on offshore wind turbine foundations<br> 
+For research purposes only</p>
+	<div class = "image">
+	<img src="/static/Alpha_Ventus_Windmills.JPG" align="middle" width = "400" height = "400" alt="wind turbine image"/> 
+	
+	<p class="imageCaption">image: en.wikipedia.org/wiki/offshore_wind_power</p>
+	</div>
+
+
+{% endblock %}

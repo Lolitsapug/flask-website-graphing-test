@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Seaswallows</title>
+		<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+		
+    <div class="sidenav"><!--redirects to other pages-->	
+				<img src = '/static/logo.png' style="margin-left:12.5px;"height="75" width="75" >
+        <a href="{{ url_for('index') }}">Home<img src='/static/2144.png' align="left" width="30" height="30" style="padding: 0px 10px 10px 0px;"></a> 
+        <a href="{{ url_for('input') }}">Input<img src='/static/formPNG.png' align="left" width="30" height="30" style="padding: 0px 10px 10px 0px;"></a>
+				<a href="{{ url_for('table') }}">Table</a>
+		</div>
+		<div class="main">
+			<h1>Seaswallows</h1>
+    	<hr>
+				
+      {% block content %} 
+				<!-- adds html from the other files so nav bar is always at top-->
+			{% endblock %} 
+				
+</body>
+</html>

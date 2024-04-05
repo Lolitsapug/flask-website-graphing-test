@@ -1,0 +1,14 @@
+{% extends 'base.html' %} <!--adds onto the base.html in the block content section-->
+{% block content %}
+<h3>Does nothing just confirms inputs work</h3>
+<p>Amplitude (m): {{d1}}</p>
+<p>Wave period (s): {{d2}}</p>
+<p>Water depth (m): {{d3}}</p>
+<p>Cylinder Diameter (m): {{d4}}</p>
+
+<h3>Example graph</h3>
+<img src="/static/{{graphName}}"> <!--adds picture-->
+<p>Highest point on wave: {{yTop}}</p>
+<img src="data:image/png;base64,{{base64}}"\>
+				
+{% endblock %}

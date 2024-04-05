@@ -1,0 +1,81 @@
+body{
+	background-color: #D9E7EE;
+	font-family: sans-serif;
+}
+.main {
+	margin-left: 125px  /*Same as the width of the sidenav*/
+}
+.sidenav {
+	height: 100%;					  
+	width: 125px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #1ba4a1;
+	padding-top: 20px;
+	font-family: sans-serif;
+}
+.sidenav a {				
+  padding: 6px 6px 6px 15px;
+ 	text-decoration: none;
+	font-size: 16.5px;
+	color: #ffffff;
+	display: block;
+	margin-top:20px;
+	text-transform: uppercase;
+	transition: 0.3s;
+
+}
+.sidenav a:hover {
+	border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+}
+
+.logo {
+	border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+h3{
+	color: #1BA4A1;
+}
+body {
+	margin-top:50px;
+}
+footer {
+ 	background-color: #777;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+h1 {
+	color: #1BA4A1;
+}
+.title{
+	left: 100;
+	top: 0;
+	height: 150px;	
+	width: 100%;
+	display: block;
+	outline: 2px solid #808080;
+}
+.image {
+	margin: 2%;
+  position: relative;
+}
+.imageCaption {
+	position: absolute;
+	bottom: 10px;
+  left: 10px;
+	font-size: 14px;
+	opacity: 0.7;
+	color: #1BA4A1;
+}
